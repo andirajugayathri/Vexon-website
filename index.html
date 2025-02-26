@@ -278,22 +278,7 @@
             }
         }
         
-        @media (max-width: 400px) {
-            .nav {
-                flex-direction: column;
-                align-items: center;
-                gap: 10px;
-            }
-            
-            .hero-title {
-                font-size: 24px;
-            }
-            
-            .subscribe-button {
-                padding: 10px 18px;
-                font-size: 14px;
-            }
-        }
+       
         
         /* Blog Post Styles */
         .blog-card {
@@ -424,7 +409,7 @@
 
 
 
-        footer {
+        /* footer {
             background-color: #222;
             color: #fff;
             padding: 60px 0 20px;
@@ -483,7 +468,7 @@
             border-top: 1px solid #444;
             color: #bbb;
             font-size: 14px;
-        }
+        } */
 
 
         /* Sidebar */
@@ -683,6 +668,23 @@
         
         .submit-btn:hover {
             background-color: #5a3dac;
+        }
+
+        @media (max-width: 400px) {
+            .nav {
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+            }
+            
+            .hero-title {
+                font-size: 24px;
+            }
+            
+            .subscribe-button {
+                padding: 10px 18px;
+                font-size: 14px;
+            }
         }
         
         @media (max-width: 992px) {
@@ -1527,46 +1529,42 @@
 
 
 
-<footer style="background-color: #6a4cbc; color: #fff; padding: 60px 0 20px;">
+<footer style="background-color: #6a4cbc;" class="text-white py-5">
     <div class="container">
-        <div class="footer-content" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 30px; margin-bottom: 40px;">
-            <div class="footer-column">
-                <h3 style="font-size: 18px; margin-bottom: 20px; position: relative; padding-bottom: 10px;">Vexon</h3>
-                <div style="content: ''; position: absolute; bottom: 0; left: 0; width: 40px; height: 2px; background-color: #ffffff;"></div>
-                <p style="color: #e8e1fa; margin-bottom: 15px; font-size: 14px;">Vexon is a modern blog and magazine template focusing on clean design and user experience. We share the latest news and insights across various categories.</p>
+        <div class="row gy-4">
+            <div class="col-md-6 col-lg-3">
+                <h3 class="fs-5 mb-3">Vexon</h3>
+                <p class="text-light small">Vexon is a modern blog and magazine template focusing on clean design and user experience. We share the latest news and insights across various categories.</p>
             </div>
-            <div class="footer-column">
-                <h3 style="font-size: 18px; margin-bottom: 20px; position: relative; padding-bottom: 10px;">Categories</h3>
-                <div style="content: ''; position: absolute; bottom: 0; left: 0; width: 40px; height: 2px; background-color: #ffffff;"></div>
-                <ul class="footer-links" style="list-style: none; padding-left: 0;">
-                    <li style="margin-bottom: 10px;"><a href="#" style="color: #e8e1fa; transition: color 0.3s ease; text-decoration: none;">Technology</a></li>
-                    <li style="margin-bottom: 10px;"><a href="#" style="color: #e8e1fa; transition: color 0.3s ease; text-decoration: none;">Lifestyle</a></li>
-                    <li style="margin-bottom: 10px;"><a href="#" style="color: #e8e1fa; transition: color 0.3s ease; text-decoration: none;">Travel</a></li>
-                    <li style="margin-bottom: 10px;"><a href="#" style="color: #e8e1fa; transition: color 0.3s ease; text-decoration: none;">Health</a></li>
-                    <li style="margin-bottom: 10px;"><a href="#" style="color: #e8e1fa; transition: color 0.3s ease; text-decoration: none;">Business</a></li>
+            <div class="col-md-6 col-lg-3">
+                <h3 class="fs-5 mb-3">Categories</h3>
+                <ul class="list-unstyled small">
+                    <li><a href="#" class="text-light text-decoration-none">Technology</a></li>
+                    <li><a href="#" class="text-light text-decoration-none">Lifestyle</a></li>
+                    <li><a href="#" class="text-light text-decoration-none">Travel</a></li>
+                    <li><a href="#" class="text-light text-decoration-none">Health</a></li>
+                    <li><a href="#" class="text-light text-decoration-none">Business</a></li>
                 </ul>
             </div>
-            <div class="footer-column">
-                <h3 style="font-size: 18px; margin-bottom: 20px; position: relative; padding-bottom: 10px;">Quick Links</h3>
-                <div style="content: ''; position: absolute; bottom: 0; left: 0; width: 40px; height: 2px; background-color: #ffffff;"></div>
-                <ul class="footer-links" style="list-style: none; padding-left: 0;">
-                    <li style="margin-bottom: 10px;"><a href="#" style="color: #e8e1fa; transition: color 0.3s ease; text-decoration: none;">Home</a></li>
-                    <li style="margin-bottom: 10px;"><a href="#" style="color: #e8e1fa; transition: color 0.3s ease; text-decoration: none;">About</a></li>
-                    <li style="margin-bottom: 10px;"><a href="#" style="color: #e8e1fa; transition: color 0.3s ease; text-decoration: none;">Contact Us</a></li>
+            <div class="col-md-6 col-lg-3">
+                <h3 class="fs-5 mb-3">Quick Links</h3>
+                <ul class="list-unstyled small">
+                    <li><a href="#" class="text-light text-decoration-none">Home</a></li>
+                    <li><a href="#" class="text-light text-decoration-none">About</a></li>
+                    <li><a href="#" class="text-light text-decoration-none">Contact Us</a></li>
                 </ul>
             </div>
-            <div class="footer-column">
-                <h3 style="font-size: 18px; margin-bottom: 20px; position: relative; padding-bottom: 10px;">Subscribe</h3>
-                <div style="content: ''; position: absolute; bottom: 0; left: 0; width: 40px; height: 2px; background-color: #ffffff;"></div>
-                <p style="color: #e8e1fa; margin-bottom: 15px; font-size: 14px;">Subscribe to our newsletter to receive the latest updates and news.</p>
+            <div class="col-md-6 col-lg-3">
+                <h3 class="fs-5 mb-3">Subscribe</h3>
+                <p class="text-light small">Subscribe to our newsletter to receive the latest updates and news.</p>
                 <form>
-                    <input type="email" placeholder="Your Email" style="width: 100%; padding: 10px; margin-bottom: 10px; border: none; border-radius: 5px; background-color: rgba(255, 255, 255, 0.9);">
-                    <button type="submit" style="background-color: #ffffff; color: #6a4cbc; border: none; padding: 10px 15px; border-radius: 5px; cursor: pointer; width: 100%; font-weight: bold;">Subscribe</button>
+                    <input type="email" class="form-control mb-2" placeholder="Your Email">
+                    <button type="submit" class="btn btn-light text-primary w-100">Subscribe</button>
                 </form>
             </div>
         </div>
-        <div class="copyright" style="text-align: center; padding-top: 20px; border-top: 1px solid rgba(255, 255, 255, 0.2); color: #e8e1fa; font-size: 14px;">
-            <p>&copy; 2025 Vexon. All Rights Reserved.</p>
+        <div class="text-center mt-4 border-top pt-3">
+            <p class="small text-light mb-0">&copy; 2025 Vexon. All Rights Reserved.</p>
         </div>
     </div>
 </footer>
